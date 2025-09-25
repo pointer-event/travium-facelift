@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EventPlatform — My Tickets</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="landingPage.html" class="text-2xl font-bold">EventPlatform</a>
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="landingPage.html" class="hover:underline">Home</a>
+        <a href="discovery.html" class="hover:underline">Discovery</a>
+        <a href="ticket.html" class="hover:underline font-semibold text-indigo-600">Tickets</a>
+        <a href="account.html" class="hover:underline">Account</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- My Tickets -->
+  <main class="container mx-auto px-4 py-10">
+    <h1 class="text-2xl font-bold mb-6">My Tickets</h1>
+
+    <!-- Ticket Card -->
+    <div class="space-y-6">
+
+      <!-- Ticket Item -->
+      <div class="bg-white rounded shadow overflow-hidden flex flex-col md:flex-row">
+        <img src="assets/images/event1.jpg" alt="Event" class="w-full md:w-48 h-40 object-cover">
+        <div class="flex-1 p-4">
+          <h2 class="text-lg font-bold">ASEAN for the Peoples Conference (AFPC)</h2>
+          <p class="text-sm text-gray-600 mt-1">Sat, Oct 4 • 8:00 AM — The Sultan Hotel & Residence Jakarta</p>
+          <p class="text-sm mt-2"><span class="font-semibold">Ticket:</span> VIP Seat</p>
+          <div class="mt-4">
+            <a href="ticketDetail.html" class="text-indigo-600 text-sm hover:underline">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ticket Item -->
+      <div class="bg-white rounded shadow overflow-hidden flex flex-col md:flex-row">
+        <img src="assets/images/event2.jpg" alt="Event" class="w-full md:w-48 h-40 object-cover">
+        <div class="flex-1 p-4">
+          <h2 class="text-lg font-bold">Jakarta Music Festival 2025</h2>
+          <p class="text-sm text-gray-600 mt-1">Sun, Nov 16 • 6:00 PM — Gelora Bung Karno, Jakarta</p>
+          <p class="text-sm mt-2"><span class="font-semibold">Ticket:</span> General Admission</p>
+          <div class="mt-4">
+            <a href="ticketDetail.html" class="text-indigo-600 text-sm hover:underline">View Details</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-12">
+    <div class="container mx-auto px-4 py-6 text-sm text-gray-600">
+      © 2025 EventPlatform • Contact: hello@example.com
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

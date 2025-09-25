@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EventPlatform — During Event</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="landingPage.html" class="text-2xl font-bold">EventPlatform</a>
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="landingPage.html" class="hover:underline">Home</a>
+        <a href="discovery.html" class="hover:underline">Discovery</a>
+        <a href="ticket.html" class="hover:underline">Tickets</a>
+        <a href="account.html" class="hover:underline">Account</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative w-full h-[250px] overflow-hidden">
+    <img src="assets/images/event1.jpg" alt="Event Banner" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative z-10 container mx-auto px-6 md:px-12 h-full flex flex-col justify-center text-white">
+      <h1 class="text-3xl md:text-4xl font-extrabold">ASEAN for the Peoples Conference (AFPC)</h1>
+      <p class="mt-2 text-lg">Sat, Oct 4 • 8:00 AM — The Sultan Hotel & Residence Jakarta</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-10 grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+    <!-- Left: Status & Agenda -->
+    <div class="lg:col-span-2 space-y-6">
+      
+      <!-- Status -->
+      <div class="bg-white p-6 rounded shadow flex items-center gap-4">
+        <img src="assets/images/Custom QR Code Car Decal Personalized Website or Social Media Business.jpg" alt="QR Code" class="w-24 h-24">
+        <div>
+          <h2 class="text-xl font-bold text-green-600">You are Checked-In!</h2>
+          <p class="text-gray-600 mt-1">Welcome, John Doe. Enjoy the event.</p>
+        </div>
+      </div>
+
+      <!-- Agenda -->
+      <div class="bg-white p-6 rounded shadow">
+        <h2 class="text-xl font-bold mb-3">Agenda</h2>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <span class="w-24 text-sm font-medium text-gray-500">08:00</span>
+            <span>Opening Ceremony</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="w-24 text-sm font-medium text-gray-500">09:00</span>
+            <span>Keynote: The Future of ASEAN Collaboration</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="w-24 text-sm font-medium text-gray-500">11:00</span>
+            <span>Panel Discussion: Youth and Innovation</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="w-24 text-sm font-medium text-gray-500">13:00</span>
+            <span>Networking Lunch</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Streaming -->
+      <div class="bg-white p-6 rounded shadow text-center">
+        <h2 class="text-xl font-bold mb-3">Live Streaming</h2>
+        <p class="text-gray-600 mb-4">Can’t be at the stage? Join the live stream here:</p>
+        <a href="#" class="bg-indigo-600 text-white px-6 py-2 rounded shadow">Join Stream</a>
+      </div>
+
+    </div>
+
+    <!-- Right: EO Contact -->
+    <aside class="space-y-6">
+      <div class="bg-white p-6 rounded shadow">
+        <h2 class="text-lg font-bold mb-3">Need Help?</h2>
+        <p class="font-semibold">Event Organizer: FPCI Indonesia</p>
+        <p class="text-sm text-gray-600">fpci@example.com</p>
+        <p class="text-sm text-gray-600">+62 812-3456-7890</p>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-12">
+    <div class="container mx-auto px-4 py-6 text-sm text-gray-600">
+      © 2025 EventPlatform • Contact: hello@example.com
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

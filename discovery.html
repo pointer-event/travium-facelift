@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EventPlatform — Discovery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="landingPage.html" class="text-2xl font-bold">EventPlatform</a>
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="landingPage.html" class="hover:underline">Home</a>
+        <a href="discovery.html" class="text-indigo-600 font-semibold">Discovery</a>
+        <a href="ticket.html" class="hover:underline">Tickets</a>
+        <a href="account.html" class="hover:underline">Account</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Discovery Filters -->
+  <section class="container mx-auto px-4 py-6">
+    <h1 class="text-2xl font-bold mb-4">Discover Events</h1>
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+      <div class="flex gap-3">
+        <input type="text" placeholder="Search events..." 
+               class="w-64 px-3 py-2 border rounded-lg focus:outline-none focus:ring">
+        <select class="px-3 py-2 border rounded-lg">
+          <option>All Categories</option>
+          <option>Music</option>
+          <option>Tech</option>
+          <option>Sports</option>
+        </select>
+        <select class="px-3 py-2 border rounded-lg">
+          <option>All Locations</option>
+          <option>Jakarta</option>
+          <option>Bandung</option>
+          <option>Surabaya</option>
+        </select>
+      </div>
+      <button class="bg-indigo-600 text-white px-4 py-2 rounded shadow">Search</button>
+    </div>
+
+    <!-- Event List -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Event Card -->
+      <a href="event.html" class="bg-white rounded-lg shadow hover:shadow-lg overflow-hidden transition block">
+        <img src="assets/images/event1.jpg" alt="Event Banner" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <span class="inline-block px-2 py-1 text-xs bg-pink-100 text-pink-700 rounded">Almost full</span>
+          <h3 class="mt-2 text-lg font-semibold">ASEAN for the Peoples Conference (AFPC)</h3>
+          <p class="text-sm text-gray-600">Sat, Oct 4 • 8:00 AM</p>
+          <p class="text-sm text-gray-600">The Sultan Hotel & Residence Jakarta</p>
+          <p class="mt-2 text-sm font-medium text-green-600">Free</p>
+        </div>
+      </a>
+
+      <!-- Event Card -->
+      <a href="event.html" class="bg-white rounded-lg shadow hover:shadow-lg overflow-hidden transition block">
+        <img src="assets/images/event2.jpg" alt="Event Banner" class="w-full h-40 object-cover">
+        <div class="p-4">
+          <span class="inline-block px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">New</span>
+          <h3 class="mt-2 text-lg font-semibold">Tech Innovation Summit 2025</h3>
+          <p class="text-sm text-gray-600">Sun, Oct 12 • 9:00 AM</p>
+          <p class="text-sm text-gray-600">Pullman Hotel Jakarta</p>
+          <p class="mt-2 text-sm font-medium text-gray-800">Rp 250.000</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-12">
+    <div class="container mx-auto px-4 py-6 text-sm text-gray-600">
+      © 2025 EventPlatform • Contact: hello@example.com
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
