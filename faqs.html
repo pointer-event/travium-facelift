@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FAQs — Travium</title>
+  <meta name="description" content="Travium is an event management platform to help you create, manage, and promote your events easily.">
+  <meta name="keywords" content="Travium, event management, tickets, discovery, FAQs">
+  <meta name="author" content="Pointer Creative Center">
+  <link rel="icon" href="assets/images/logo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="fixed w-full top-0 z-30 bg-white/80 backdrop-blur shadow">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="landingPage.html" class="flex items-center gap-2">
+        <img src="assets/images/logo.png" alt="Travium Logo" class="h-8">
+        <span class="font-bold text-xl text-blue-700">Travium</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex gap-8 font-medium">
+        <a href="landingPage.html" class="hover:text-blue-600 hover:underline">Home</a>
+        <a href="features.html" class="hover:text-blue-600 hover:underline">Features</a>
+        <a href="discovery.html" class="hover:text-blue-600 hover:underline">Discovery</a>
+        <a href="ticket.html" class="hover:text-blue-600 hover:underline">Tickets</a>
+        <a href="faqs.html" class="text-blue-600 font-semibold underline">FAQs</a>
+        <a href="contact.html" class="hover:text-blue-600 hover:underline">Contact Us</a>
+        <a href="profile.html" class="hover:text-blue-600 hover:underline">Account</a>
+      </nav>
+
+      <!-- Mobile Button -->
+      <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow px-6 py-4 space-y-3">
+      <a href="landingPage.html" class="block hover:text-blue-600">Home</a>
+      <a href="features.html" class="block hover:text-blue-600">Features</a>
+      <a href="discovery.html" class="block hover:text-blue-600">Discovery</a>
+      <a href="ticket.html" class="block hover:text-blue-600">Tickets</a>
+      <a href="faqs.html" class="block text-blue-600 font-semibold">FAQs</a>
+      <a href="contact.html" class="block hover:text-blue-600">Contact Us</a>
+      <a href="profile.html" class="block hover:text-blue-600">Account</a>
+    </div>
+  </header>
+
+  <!-- FAQs -->
+  <section class="pt-28 pb-20 container mx-auto px-6 max-w-3xl">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl font-bold text-gray-900">🙋 Frequently Asked Questions</h1>
+      <p class="text-gray-600 mt-3">Find answers to the most common questions about Travium.</p>
+    </div>
+
+    <div class="space-y-4">
+      <!-- Item -->
+      <details class="bg-white p-5 rounded-lg shadow hover:shadow-md transition-all">
+        <summary class="font-semibold cursor-pointer flex justify-between items-center">
+          1. What is Travium? <span class="ml-2">➕</span>
+        </summary>
+        <p class="text-gray-600 mt-2">Travium is an event management platform to help you create, manage, and promote your events easily.</p>
+      </details>
+
+      <details class="bg-white p-5 rounded-lg shadow hover:shadow-md transition-all">
+        <summary class="font-semibold cursor-pointer flex justify-between items-center">
+          2. How can I create an event? <span class="ml-2">➕</span>
+        </summary>
+        <p class="text-gray-600 mt-2">Just register, log in, and go to the "Create Event" page to set up your event details.</p>
+      </details>
+
+      <details class="bg-white p-5 rounded-lg shadow hover:shadow-md transition-all">
+        <summary class="font-semibold cursor-pointer flex justify-between items-center">
+          3. Is there a fee for using Travium? <span class="ml-2">➕</span>
+        </summary>
+        <p class="text-gray-600 mt-2">Creating events is free. We only charge a small fee for paid ticket transactions.</p>
+      </details>
+
+      <details class="bg-white p-5 rounded-lg shadow hover:shadow-md transition-all">
+        <summary class="font-semibold cursor-pointer flex justify-between items-center">
+          4. How do payments work? <span class="ml-2">➕</span>
+        </summary>
+        <p class="text-gray-600 mt-2">Travium supports secure online payments via credit card, e-wallets, and bank transfers.</p>
+      </details>
+
+      <details class="bg-white p-5 rounded-lg shadow hover:shadow-md transition-all">
+        <summary class="font-semibold cursor-pointer flex justify-between items-center">
+          5. Can I refund tickets? <span class="ml-2">➕</span>
+        </summary>
+        <p class="text-gray-600 mt-2">Refund policies depend on each organizer, but Travium provides tools to process refunds easily.</p>
+      </details>
+
+      <details class="bg-white p-5 rounded-lg shadow hover:shadow-md transition-all">
+        <summary class="font-semibold cursor-pointer flex justify-between items-center">
+          6. Is my data safe? <span class="ml-2">➕</span>
+        </summary>
+        <p class="text-gray-600 mt-2">Yes, we use encryption and follow best practices to keep your data secure at all times.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white py-8">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <p>© 2025 Travium by Pointer Creative Center</p>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-gray-300">Privacy Policy</a>
+        <a href="#" class="hover:text-gray-300">Terms of Service</a>
+        <a href="#" class="hover:text-gray-300">Support</a>
+      </div>
+      <div class="flex gap-4 text-xl">
+        <a href="#" aria-label="Instagram" class="hover:text-pink-400">📸</a>
+        <a href="#" aria-label="LinkedIn" class="hover:text-blue-300">💼</a>
+        <a href="#" aria-label="GitHub" class="hover:text-gray-300">🐙</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script for mobile nav -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
+    
