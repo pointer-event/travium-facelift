@@ -7,7 +7,6 @@
   <meta name="description" content="Explore Travium's key features for event management, smart ticketing, analytics, secure payments, and more.">
   <meta name="keywords" content="Travium, event management, ticketing, analytics, networking, secure payments">
   <meta name="author" content="Pointer Creative Center">
-  <link rel="icon" href="assets/images/logo.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
@@ -18,88 +17,73 @@
   <header class="fixed w-full top-0 z-30 bg-white/80 backdrop-blur shadow">
     <div class="container mx-auto flex justify-between items-center py-4 px-6">
       <a href="landingPage.html" class="flex items-center gap-2">
-        <img src="assets/images/logo.png" alt="Travium Logo" class="h-8">
         <span class="font-bold text-xl text-blue-700">Travium</span>
       </a>
-
-      <!-- Desktop Nav -->
+      <!-- Nav -->
       <nav class="hidden md:flex gap-8 font-medium">
-        <a href="landingPage.html" class="hover:text-blue-600 hover:underline">Home</a>
-        <a href="features.html" class="text-blue-600 font-semibold underline">Features</a>
-        <a href="discovery.html" class="hover:text-blue-600 hover:underline">Discovery</a>
-        <a href="ticket.html" class="hover:text-blue-600 hover:underline">Tickets</a>
-        <a href="faqs.html" class="hover:text-blue-600 hover:underline">FAQs</a>
-        <a href="contact.html" class="hover:text-blue-600 hover:underline">Contact Us</a>
-        <a href="profile.html" class="hover:text-blue-600 hover:underline">Account</a>
-      </nav>
-
-      <!-- Mobile Button -->
-      <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
-        ☰
-      </button>
-    </div>
-
-    <!-- Mobile Nav -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white shadow px-6 py-4 space-y-3">
-      <a href="landingPage.html" class="block hover:text-blue-600">Home</a>
-      <a href="features.html" class="block text-blue-600 font-semibold">Features</a>
-      <a href="discovery.html" class="block hover:text-blue-600">Discovery</a>
-      <a href="ticket.html" class="block hover:text-blue-600">Tickets</a>
-      <a href="faqs.html" class="block hover:text-blue-600">FAQs</a>
-      <a href="contact.html" class="block hover:text-blue-600">Contact Us</a>
-      <a href="profile.html" class="block hover:text-blue-600">Account</a>
+        <a href="landingPage.html" class="hover:text-blue-600">Home</a>
+        <a href="features.html" class="text-blue-600 font-semibold">Features</a>
+        <a href="faqs.html" class="hover:text-blue-600">FAQs</a>
+        <a href="contact.html" class="hover:text-blue-600">Contact Us</a>
+      </nav>  
     </div>
   </header>
 
+  <!-- Hero Section -->
+  <section class="pt-28 pb-20 bg-gradient-to-r from-blue-50 to-indigo-50">
+    <div class="container mx-auto text-center px-6">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900">✨ Power Up Your Events with Travium</h1>
+      <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+        Manage events, sell tickets, track analytics, and engage your community — all in one platform.
+      </p>
+      <a href="contact.html" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">
+        Get Started
+      </a>
+    </div>
+  </section>
+
   <!-- Features Section -->
-  <section class="pt-28 pb-20 container mx-auto px-6">
-    <!-- Logo & Title -->
+  <section class="py-20 container mx-auto px-6">
     <div class="text-center mb-12">
-      <h1 class="text-4xl font-bold text-gray-900">✨ Our Key Features</h1>
+      <h2 class="text-3xl font-bold text-gray-900">Our Key Features</h2>
       <p class="text-gray-600 mt-3 max-w-2xl mx-auto">
         Discover everything you need to manage, promote, and grow your events — all in one place.
       </p>
     </div>
 
-    <!-- Features Grid -->
     <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
       <!-- Feature 1 -->
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition text-center">
         <i class="fa-solid fa-calendar-check text-blue-600 text-4xl mb-4"></i>
         <h3 class="font-semibold text-xl mb-2">Event Management</h3>
         <p class="text-gray-600">Easily create, organize, and manage your events in one platform.</p>
       </div>
-
       <!-- Feature 2 -->
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition text-center">
         <i class="fa-solid fa-ticket text-green-600 text-4xl mb-4"></i>
         <h3 class="font-semibold text-xl mb-2">Smart Ticketing</h3>
         <p class="text-gray-600">Integrated ticket sales & attendee check-in system.</p>
       </div>
-
       <!-- Feature 3 -->
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition text-center">
         <i class="fa-solid fa-chart-line text-indigo-600 text-4xl mb-4"></i>
         <h3 class="font-semibold text-xl mb-2">Analytics Dashboard</h3>
         <p class="text-gray-600">Track participants, sales, and engagement with real-time analytics.</p>
       </div>
-
       <!-- Feature 4 -->
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition text-center">
         <i class="fa-solid fa-users text-pink-600 text-4xl mb-4"></i>
         <h3 class="font-semibold text-xl mb-2">Community & Networking</h3>
         <p class="text-gray-600">Connect attendees and build strong networks through interactive features.</p>
       </div>
-
       <!-- Feature 5 -->
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition text-center">
         <i class="fa-solid fa-lock text-orange-600 text-4xl mb-4"></i>
         <h3 class="font-semibold text-xl mb-2">Secure Payments</h3>
         <p class="text-gray-600">Multiple payment gateways with secure and fast transactions.</p>
       </div>
-
       <!-- Feature 6 -->
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition text-center">
         <i class="fa-solid fa-headset text-red-600 text-4xl mb-4"></i>
         <h3 class="font-semibold text-xl mb-2">24/7 Support</h3>
         <p class="text-gray-600">Our support team is always available to help you run events smoothly.</p>
@@ -107,7 +91,39 @@
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Testimonials -->
+  <section class="bg-gray-100 py-16">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-2xl font-bold mb-8">What Our Users Say</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow">
+          <p class="text-gray-600">“Travium made our event a huge success! Ticketing was seamless and analytics were insightful.”</p>
+          <h4 class="mt-4 font-semibold">— Sarah, Event Organizer</h4>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <p class="text-gray-600">“The networking feature is amazing. Our attendees loved connecting through the platform.”</p>
+          <h4 class="mt-4 font-semibold">— Daniel, Community Manager</h4>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <p class="text-gray-600">“Secure payments and smooth check-in saved us so much time. Highly recommend!”</p>
+          <h4 class="mt-4 font-semibold">— Aisyah, Conference Host</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+<section class="py-20 bg-gradient-to-r from-blue-400 to-indigo-500 text-center text-white">
+  <h2 class="text-3xl md:text-4xl font-bold">Ready to Host Smarter Events?</h2>
+  <p class="mt-4 text-lg">Join Travium today and take your event management to the next level.</p>
+  <a href="contact.html" class="mt-6 inline-block bg-white text-blue-700 px-8 py-3 rounded-full font-semibold shadow hover:bg-gray-100 transition">
+    Try It Free
+  </a>
+</section>
+
+
+
+   <!-- Footer -->
   <footer class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white py-8">
     <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
       <p>© 2025 Travium by Pointer Creative Center</p>
@@ -117,20 +133,12 @@
         <a href="#" class="hover:text-gray-300">Support</a>
       </div>
       <div class="flex gap-4 text-xl">
-        <a href="#" aria-label="Instagram" class="hover:text-pink-400">📸</a>
-        <a href="#" aria-label="LinkedIn" class="hover:text-blue-300">💼</a>
-        <a href="#" aria-label="GitHub" class="hover:text-gray-300">🐙</a>
+        <a href="#" aria-label="Instagram" class="hover:text-pink-400">Instagram</a>
+        <a href="#" aria-label="LinkedIn" class="hover:text-blue-300">LinkedIn</a>
+        <a href="#" aria-label="Tiktok" class="hover:text-gray-300">Tiktok</a>
       </div>
     </div>
   </footer>
 
-  <!-- Script for mobile nav -->
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
 </body>
 </html>
