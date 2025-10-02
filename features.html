@@ -8,6 +8,20 @@
   <meta name="keywords" content="Travium, event management, ticketing, analytics, networking, secure payments">
   <meta name="author" content="Pointer Creative Center">
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .corner-shape {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #f4f4f4;
+      border-bottom-right-radius: 1rem;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
 </head>
@@ -27,107 +41,144 @@
         <a class="hover:underlinex">|</a>
         <a href="faqs.html" class="hover:text-blue-600">FAQs</a>
         <a class="hover:underlinex">|</a>
-        <a href="contact.html" class="text-blue-600 font-semibold">Contact Us</a>
+        <a href="contact.html" class="hover:text-blue-600 font-semibold">Contact Us</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="pt-28 pb-20 bg-gradient-to-r from-blue-50 to-indigo-50">
-    <div class="container mx-auto text-center px-6">
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900">✨ Power Up Your Events with Travium</h1>
-      <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
-        Manage events, sell tickets, track analytics, and engage your community — all in one platform.
-      </p>
-      <a href="contact.html" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">
-        Get Started
+  <div class="max-w-5xl mx-auto px-6 py-16 mt-10">
+    <!-- Header -->
+   <div class="flex justify-center">
+  <div class="border border-green-500 rounded-xl px-4 py-3 bg-white text-black text-sm font-medium mb-4">
+    Travium Features
+  </div>
+</div>
+
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+      Power Features For Your experience
+    </h1>
+    <!-- Features Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Feature Card -->
+      <div class="relative bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 p-6">
+        <!-- Top Left Shape -->
+        <div class="corner-shape">
+          <!-- SVG Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-purple-600" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 10h.01M12 10h.01M16 10h.01M9 16h6" />
+          </svg>
+        </div>
+        <div class="mt-[70px]">
+        <h3 class="text-lg font-semibold mt-8 mb-2">Instant Communication</h3>
+        <p class="text-gray-600 text-sm">
+          Seamlessly chat and collaborate in real time, fostering swift decision-making and teamwork.
+        </p>
+        </div>
+      </div>
+      <div class="relative bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 p-6">
+        <!-- Top Left Shape -->
+        <div class="corner-shape">
+          <!-- SVG Icon -->
+       <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-purple-600" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1M4 12l1.41-1.41A2 2 0 017 10h10a2 2 0 011.59.59L20 12M12 4v4" />
+          </svg>
+        </div>
+        <div class="mt-[70px]">
+              <h3 class="text-lg font-semibold mt-8 mb-2">Effortless File Sharing</h3>
+        <p class="text-gray-600 text-sm">
+          Share and collaborate on documents with ease, keeping your team on the same page.
+        </p>
+        </div>
+      </div>
+      <div class="relative bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 p-6">
+        <!-- Top Left Shape -->
+        <div class="corner-shape">
+          <!-- SVG Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-purple-600" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 7h18M3 12h18M3 17h18" />
+          </svg>
+        </div>
+        <div class="mt-[70px]">
+       <h3 class="text-lg font-semibold mt-8 mb-2">Stay Organized</h3>
+        <p class="text-gray-600 text-sm">
+          Efficiently manage tasks and projects, ensuring nothing falls through the cracks.
+        </p>
+        </div>
+      </div>
+      <div class="relative bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 p-6">
+        <!-- Top Left Shape -->
+        <div class="corner-shape">
+          <!-- SVG Icon -->
+         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-purple-600" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14V10z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h11a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2z" />
+          </svg>
+        </div>
+        <div class="mt-[70px]">
+       <h3 class="text-lg font-semibold mt-8 mb-2">Virtual Meetings</h3>
+        <p class="text-gray-600 text-sm">
+          Host productive video conferences, connecting teams and clients from anywhere.
+        </p>
+        </div>
+      </div>
+      <div class="relative bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 p-6">
+        <!-- Top Left Shape -->
+        <div class="corner-shape">
+          <!-- SVG Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-purple-600" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 6v6l4 2" />
+          </svg>
+        </div>
+        <div class="mt-[70px]">
+       <h3 class="text-lg font-semibold mt-8 mb-2">Tailor to Your Needs</h3>
+        <p class="text-gray-600 text-sm">
+          Customize Aura to match your unique workflows with our flexible integration options and API access.
+        </p>
+        </div>
+      </div>
+      <div class="relative bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 p-6">
+        <!-- Top Left Shape -->
+        <div class="corner-shape">
+          <!-- SVG Icon -->
+     <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-purple-600" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 2C9.243 2 7 4.243 7 7v3H6c-1.103 0-2 .897-2 2v9c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-9c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5zm-3 8V7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9zm3 5c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1z"/>
+     </svg>
+        </div>
+        <div class="mt-[70px]">
+     <h3 class="text-lg font-semibold mt-8 mb-2">Robust Security</h3>
+        <p class="text-gray-600 text-sm">
+          Rest easy knowing your data is protected with industry-standard security measures.
+        </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+    <!-- CTA Button -->
+    <div class="text-center">
+      <a href="#" class="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-purple-700 transition">
+        All Features
       </a>
     </div>
-  </section>
-
-  <!-- Features Section -->
-  <section class="py-20 container mx-auto px-6">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-bold text-gray-900">Our Key Features</h2>
-      <p class="text-gray-600 mt-3 max-w-2xl mx-auto">
-        Discover everything you need to manage, promote, and grow your events — all in one place.
-      </p>
-    </div>
-
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-      <!-- Feature 1 -->
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition text-center">
-        <i class="fa-solid fa-calendar-check text-blue-600 text-4xl mb-4"></i>
-        <h3 class="font-semibold text-xl mb-2">Event Management</h3>
-        <p class="text-gray-600">Easily create, organize, and manage your events in one platform.</p>
-      </div>
-      <!-- Feature 2 -->
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition text-center">
-        <i class="fa-solid fa-ticket text-green-600 text-4xl mb-4"></i>
-        <h3 class="font-semibold text-xl mb-2">Smart Ticketing</h3>
-        <p class="text-gray-600">Integrated ticket sales & attendee check-in system.</p>
-      </div>
-      <!-- Feature 3 -->
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition text-center">
-        <i class="fa-solid fa-chart-line text-indigo-600 text-4xl mb-4"></i>
-        <h3 class="font-semibold text-xl mb-2">Analytics Dashboard</h3>
-        <p class="text-gray-600">Track participants, sales, and engagement with real-time analytics.</p>
-      </div>
-      <!-- Feature 4 -->
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition text-center">
-        <i class="fa-solid fa-users text-pink-600 text-4xl mb-4"></i>
-        <h3 class="font-semibold text-xl mb-2">Community & Networking</h3>
-        <p class="text-gray-600">Connect attendees and build strong networks through interactive features.</p>
-      </div>
-      <!-- Feature 5 -->
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition text-center">
-        <i class="fa-solid fa-lock text-orange-600 text-4xl mb-4"></i>
-        <h3 class="font-semibold text-xl mb-2">Secure Payments</h3>
-        <p class="text-gray-600">Multiple payment gateways with secure and fast transactions.</p>
-      </div>
-      <!-- Feature 6 -->
-      <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl hover:-translate-y-1 transition text-center">
-        <i class="fa-solid fa-headset text-red-600 text-4xl mb-4"></i>
-        <h3 class="font-semibold text-xl mb-2">24/7 Support</h3>
-        <p class="text-gray-600">Our support team is always available to help you run events smoothly.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="bg-gray-100 py-16">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-2xl font-bold mb-8">What Our Users Say</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-xl shadow">
-          <p class="text-gray-600">“Travium made our event a huge success! Ticketing was seamless and analytics were insightful.”</p>
-          <h4 class="mt-4 font-semibold">— Sarah, Event Organizer</h4>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow">
-          <p class="text-gray-600">“The networking feature is amazing. Our attendees loved connecting through the platform.”</p>
-          <h4 class="mt-4 font-semibold">— Daniel, Community Manager</h4>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow">
-          <p class="text-gray-600">“Secure payments and smooth check-in saved us so much time. Highly recommend!”</p>
-          <h4 class="mt-4 font-semibold">— Aisyah, Conference Host</h4>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-<section class="py-20 bg-gradient-to-r from-blue-400 to-indigo-500 text-center text-white">
-  <h2 class="text-3xl md:text-4xl font-bold">Ready to Host Smarter Events?</h2>
-  <p class="mt-4 text-lg">Join Travium today and take your event management to the next level.</p>
-  <a href="contact.html" class="mt-6 inline-block bg-white text-blue-700 px-8 py-3 rounded-full font-semibold shadow hover:bg-gray-100 transition">
-    Try It Free
-  </a>
-</section>
-
+  </div>
 
 
 <!-- Footer -->
-<footer class="bg-[#0B132B] text-gray-200 py-12">
+<footer class="bg-[#0B132B] text-gray-200 py-12 mt-10">
   <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
     <!-- Logo & Address -->
     <div>
