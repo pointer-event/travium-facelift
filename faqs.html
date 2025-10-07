@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FAQs — Travium</title>
+  <meta name="description" content="Travium is an event management platform to help you create, manage, and promote your events easily.">
+  <meta name="keywords" content="Travium, event management, tickets, discovery, FAQs">
+  <meta name="author" content="Pointer Creative Center">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+   <!-- Navbar -->
+  <header class="fixed w-full top-0 z-30 bg-white/80 backdrop-blur shadow">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6 max-w-7xl">
+            <a href="landingPage.html" class="flex items-center gap-2">
+                <img src="https://supa-prod.pointer.co.id/storage/v1/object/public/upload/image/Travium-Blue.png" alt="Travium Logo" class="h-6" /> 
+                <!-- <span class="font-bold text-xl text-blue-700">Travium</span> -->
+            </a>
+            <nav class="hidden md:flex gap-8 font-medium">
+                <a href="landingPage.html" class="hover:text-blue-600">Home</a>
+                <a class="text-gray-400">|</a>
+                <a href="features.html" class="hover:text-blue-600">Features</a>
+                <a class="text-gray-400">|</a>
+                <a href="faqs.html" class="hover:text-blue-600">FAQs</a>
+                <a class="text-gray-400">|</a>
+                <a href="gallery.html" class="hover:text-blue-600">Gallery</a>
+                <a class="text-gray-400">|</a>
+                <a href="contact.html" class="hover:text-blue-600">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+  <!-- FAQs -->
+  <section class="pt-28 pb-20 container mx-auto px-6 max-w-3xl">
+     <div class="flex justify-center">
+  <div class="border border-green-500 rounded-xl px-4 py-3 bg-white text-black text-sm font-medium mb-4">
+    Frequently Asked Questions
+  </div>
+</div>
+    <div class="text-center mb-10">
+      <p class="text-gray-600 mt-3">Find answers to the most common questions about Travium.</p>
+    </div>
+
+    <!-- Search bar -->
+    <div class="mb-8">
+      <input 
+        type="text" 
+        id="faq-search" 
+        placeholder="🔍 Search questions..." 
+        class="w-full px-4 py-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500">
+    </div>
+
+    <!-- FAQ Categories -->
+    <div class="flex flex-wrap gap-3 mb-10 justify-center">
+      <button class="px-4 py-2 rounded-full bg-blue-100 text-blue-700 hover:bg-blue-200" onclick="filterFaq('general')">General</button>
+      <button class="px-4 py-2 rounded-full bg-green-100 text-green-700 hover:bg-green-200" onclick="filterFaq('tickets')">Tickets</button>
+      <button class="px-4 py-2 rounded-full bg-yellow-100 text-yellow-700 hover:bg-yellow-200" onclick="filterFaq('payment')">Payments</button>
+      <button class="px-4 py-2 rounded-full bg-purple-100 text-purple-700 hover:bg-purple-200" onclick="filterFaq('security')">Security</button>
+    </div>
+
+    <!-- FAQ List -->
+    <div id="faq-list" class="space-y-4">
+      <details class="faq-item general bg-white p-5 rounded-lg shadow hover:shadow-md transition-all">
+        <summary class="font-semibold cursor-pointer flex justify-between items-center">
+          1. What is Travium? <span class="ml-2">➕</span>
+        </summary>
+        <p class="text-gray-600 mt-2">
+          Travium is an event management platform to help you create, manage, and promote your events easily.
+        </p>
+      </details>
+
+      <details class="faq-item general tickets bg-white p-5 rounded-lg shadow hover:shadow-md transition-all">
+        <summary class="font-semibold cursor-pointer flex justify-between items-center">
+          2. How can I create an event? <span class="ml-2">➕</span>
+        </summary>
+        <p class="text-gray-600 mt-2">
+          Just register, log in, and go to the "Create Event" page to set up your event details.
+        </p>
+      </details>
+
+      <details class="faq-item payment bg-white p-5 rounded-lg shadow hover:shadow-md transition-all">
+        <summary class="font-semibold cursor-pointer flex justify-between items-center">
+          3. Is there a fee for using Travium? <span class="ml-2">➕</span>
+        </summary>
+        <p class="text-gray-600 mt-2">
+          Creating events is free. We only charge a small fee for paid ticket transactions.
+        </p>
+      </details>
+
+      <details class="faq-item payment bg-white p-5 rounded-lg shadow hover:shadow-md transition-all">
+        <summary class="font-semibold cursor-pointer flex justify-between items-center">
+          4. How do payments work? <span class="ml-2">➕</span>
+        </summary>
+        <p class="text-gray-600 mt-2">
+          Travium supports secure online payments via credit card, e-wallets, and bank transfers.
+        </p>
+      </details>
+
+      <details class="faq-item tickets bg-white p-5 rounded-lg shadow hover:shadow-md transition-all">
+        <summary class="font-semibold cursor-pointer flex justify-between items-center">
+          5. Can I refund tickets? <span class="ml-2">➕</span>
+        </summary>
+        <p class="text-gray-600 mt-2">
+          Refund policies depend on each organizer, but Travium provides tools to process refunds easily.
+        </p>
+      </details>
+
+      <details class="faq-item security bg-white p-5 rounded-lg shadow hover:shadow-md transition-all">
+        <summary class="font-semibold cursor-pointer flex justify-between items-center">
+          6. Is my data safe? <span class="ml-2">➕</span>
+        </summary>
+        <p class="text-gray-600 mt-2">
+          Yes, we use encryption and follow best practices to keep your data secure at all times.
+        </p>
+      </details>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-12">
+      <p class="text-gray-700 mb-3">❓ Didn’t find your answer?</p>
+      <a href="contact.html" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 shadow">
+        Contact Support
+      </a>
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer class="bg-[#0B132B] text-gray-200 py-12">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <!-- Logo & Address -->
+    <div>
+      <img src="https://supa-prod.pointer.co.id/storage/v1/object/public/upload/image/Travium-White.png" alt="Travium Logo" class="h-8 mb-4">
+      <p class="text-sm">
+        Jl. RS. Fatmawati Raya No.29<br>
+        2nd Floor, Cilandak Bar. Kota<br>
+        Jakarta Selatan, DKI Jakarta 12430
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h4 class="text-lg font-semibold mb-3">Quick Links</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-white">Home</a></li>
+        <li><a href="#" class="hover:text-white">Features</a></li>
+        <li><a href="#" class="hover:text-white">FAQs</a></li>
+        <li><a href="#" class="hover:text-white">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Follow Us -->
+    <div>
+      <h4 class="text-lg font-semibold mb-3">Follow Us</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-white">Instagram</a></li>
+        <li><a href="#" class="hover:text-white">Tiktok</a></li>
+        <li><a href="#" class="hover:text-white">LinkedIn</a></li>
+        <li><a href="#" class="hover:text-white">Facebook</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h4 class="text-lg font-semibold mb-3">Contact</h4>
+      <ul class="space-y-3 text-sm">
+        <li class="flex items-center gap-2"><span>📍</span> Pointer Creative Center</li>
+        <li class="flex items-center gap-2"><span>✉️</span> nonalisa@travium.id</li>
+        <li class="flex items-center gap-2"><span>📞</span> 021-22767982</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="border-t border-gray-700 mt-8 pt-4 text-center text-sm text-gray-400">
+    © 2025 Travium. All rights reserved.
+  </div>
+</footer>
+
+  <!-- Script -->
+  <script>
+    // FAQ search
+    const searchInput = document.getElementById('faq-search');
+    const faqItems = document.querySelectorAll('.faq-item');
+    searchInput.addEventListener('input', () => {
+      const search = searchInput.value.toLowerCase();
+      faqItems.forEach(item => {
+        item.style.display = item.innerText.toLowerCase().includes(search) ? 'block' : 'none';
+      });
+    });
+
+    // Category filter
+    function filterFaq(category) {
+      faqItems.forEach(item => {
+        if (item.classList.contains(category) || category === 'all') {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

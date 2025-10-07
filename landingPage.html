@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Travium — Create Your Event with Simple Management</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+   <style>
+    /* Animasi FAQ */
+    .faq-answer {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    .faq-answer.open {
+      max-height: 500px; /* cukup tinggi untuk isi */
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <header class="fixed w-full top-0 z-30 bg-white/80 backdrop-blur shadow">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="landingPage.html" class="flex items-center gap-2">
+        <img src="https://supa-prod.pointer.co.id/storage/v1/object/public/upload/image/Travium-Blue.png" alt="Travium Logo" class="h-6" />
+       
+      </a>
+      <nav class="hidden md:flex gap-8 font-medium">
+        <a href="landingPage.html" class="hover:text-blue-600">Home</a>
+        <a class="hover:underlinex">|</a>
+        <a href="features.html" class="hover:text-blue-600">Features</a>
+        <a class="hover:underlinex">|</a>
+        <a href="faqs.html" class="hover:text-blue-600">FAQs</a>
+        <a class="hover:underlinex">|</a>
+        <a href="gallery.html" class="hover:text-blue-600">Gallery</a>
+        <a class="hover:underlinex">|</a>
+        <a href="contact.html" class="hover:text-blue-600">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section with Background Image -->
+  <section class="relative h-[90vh] overflow-hidden">
+    <!-- Background Image -->
+    <img src="assets/images/abc2.jpeg" alt="Background" class="absolute inset-0 w-full h-full object-cover z-0" />
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 z-10"></div>
+
+    <!-- Content -->
+    <div class="relative z-20 max-w-7xl mx-auto px-6 py-20 flex flex-col lg:flex-row items-center justify-between space-y-10 lg:space-y-0">
+      <!-- Text -->
+      <div class="lg:w-1/2 text-center lg:text-left">
+        <span class="text-sm bg-white text-black px-3 py-3 rounded-lg font-medium inline-block mb-3">Event Create</span>
+        <h1 class="text-4xl md:text-5xl font-bold text-black">Create Your Event<br>With Simple Management</h1>
+        <p class="text-gray-700 mt-4 text-lg">All-in-one platform to manage your events, speakers, attendees, and ticket sales — seamlessly and professionally.</p>
+        <button class ="mt-6 px-6 py-3 bg-[#0D1B2A] text-white rounded-lg font-semibold hover:bg-[#1c2e45]">Explore</button>
+      </div>
+
+      <!-- Mockup Image -->
+      <div class="lg:w-1/2 flex justify-center">
+        <img src="https://supa-prod.pointer.co.id/storage/v1/object/public/upload/image/banner-5.png" alt="Mockup" class="rounded-xl shadow-lg" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Menu -->
+  <div class="bg-purple-300 py-2 shadow-xl mt-2">
+    <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center gap-6 text-sm font-medium text-white">
+      <span class="px-4 py-2 font-bold">FESTIVALS </span>
+      <span class="px-4 py-2 font-bold">WORKSHOPS</span>
+      <span class="px-4 py-2 font-bold">CONCERTS</span>
+      <span class="px-4 py-2 font-bold">EXHIBITIONS</span>
+      <span class="px-4 py-2 font-bold">MEETING</span>
+    </div>
+  </div>
+
+   <section class="max-w-5xl mx-auto text-center py-16 px-6">
+    <div class="inline-block border border-green-500 rounded-xl px-4 py-3 bg-white text-black-600 text-sm font-medium mb-4">
+      Everything You Need
+    </div>
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
+      Run Successful Events
+    </h1>
+
+    <!-- Features Cards -->
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="bg-white p-8 rounded-xl shadow-md">
+        <div class="flex justify-center mb-4">
+          <div class="bg-blue-100 p-4 rounded-full">
+            <span class="text-blue-600 text-2xl">☰</span>
+          </div>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Event Planning Made Simple</h3>
+        <p class="text-gray-600 text-sm">
+          Plan and manage events of any size with intuitive tools to schedule, organize content, and assign roles.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <div class="flex justify-center mb-4">
+          <div class="bg-blue-100 p-4 rounded-full">
+            <span class="text-blue-600 text-2xl">👥</span>
+          </div>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Smart Attendee Management</h3>
+        <p class="text-gray-600 text-sm">
+          Track registrations, send personalized updates, and keep attendees engaged before, during, and after your event.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <div class="flex justify-center mb-4">
+          <div class="bg-blue-100 p-4 rounded-full">
+            <span class="text-blue-600 text-2xl">🏷️</span>
+          </div>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Ticketing, Category And Payments</h3>
+        <p class="text-gray-600 text-sm">
+          Create ticket tiers, manage sales in real time, and accept secure payments with full analytics.
+        </p>
+      </div>
+    </div>
+  </section>
+
+ <section class="max-w-6xl mx-auto py-16 px-6">
+    <div class="bg-blue-950 text-white p-10 rounded-2xl shadow-xl">
+      <!-- Badge -->
+      <span class="inline-block bg-white text-blue-900 px-4 py-3 rounded-full text-sm font-semibold mb-4">
+        Easy Communication
+      </span>
+
+      <!-- Title -->
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        Stay on Track, Keep Guests Engaged
+      </h2>
+
+      <!-- Subtitle -->
+      <p class="text-gray-300 mb-8 max-w-2xl">
+        From smart email reminders to one-click RSVP tracking and Google Calendar sync.
+      </p>
+
+      <!-- Content Grid -->
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <!-- Left Image -->
+        <div class="bg-pink-200 p-6 rounded-xl">
+          <img src="https://supa-prod.pointer.co.id/storage/v1/object/public/upload/image/banner-7.png" 
+               alt="RSVP Management" 
+               class="rounded-lg shadow-lg">
+        </div>
+
+        <!-- Right Features -->
+        <div class="space-y-6 text-gray-200">
+          <div>
+            <h3 class="font-semibold text-lg">Smart Reminders</h3>
+            <p class="text-gray-400 text-sm">
+              Keep your attendees in the loop with automatic event reminders — so they never miss a thing.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-lg">Easy RSVP Manage</h3>
+            <p class="text-gray-400 text-sm">
+              Track who’s coming and who’s not with a seamless RSVP system that simplifies guest coordination.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-lg">Google Calendar</h3>
+            <p class="text-gray-400 text-sm">
+              Let guests add events to their Google Calendar in one click — ensuring your event stays top of mind.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto py-16 px-6">
+    <!-- Badge -->
+    <div class="text-center mb-4">
+      <span class="inline-block border border-green-500 text-black-600 bg-white px-4 py-3 rounded-full text-sm font-medium">
+        Why Choose Us
+      </span>
+    </div>
+
+    <!-- Title -->
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">
+      Why Organizers Choose Travium
+    </h2>
+    <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+      We built Travium to eliminate the stress, confusion, and inefficiencies of traditional event planning.
+    </p>
+
+    <!-- Content -->
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <!-- Image -->
+      <div class="bg-pink-100 p-6 rounded-xl shadow-md">
+        <img src="https://supa-prod.pointer.co.id/storage/v1/object/public/upload/image/banner-6.png" 
+             alt="Event Dashboard" 
+             class="rounded-lg shadow-lg">
+      </div>
+
+      <!-- Features List -->
+      <div class="space-y-6">
+        <div class="flex items-start space-x-4">
+          <div class="bg-blue-100 text-blue-600 p-2 rounded-full">
+            📊
+          </div>
+          <p class="text-gray-700">
+            Manage everything — schedules, speakers, attendees, and tickets from one powerful dashboard.
+          </p>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="bg-blue-100 text-blue-600 p-2 rounded-full">
+            ⚡
+          </div>
+          <p class="text-gray-700">
+            Automate repetitive tasks and minimize human error with smart tools and real-time updates.
+          </p>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="bg-blue-100 text-blue-600 p-2 rounded-full">
+            🔔
+          </div>
+          <p class="text-gray-700">
+            Keep your team, speakers, and attendees in sync with built-in messaging and notifications.
+          </p>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="bg-blue-100 text-blue-600 p-2 rounded-full">
+            📈
+          </div>
+          <p class="text-gray-700">
+            Get detailed analytics on ticket sales, attendee behavior, and engagement to improve every event.
+          </p>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="bg-blue-100 text-blue-600 p-2 rounded-full">
+            ✅
+          </div>
+          <p class="text-gray-700">
+            From registration to post event feedback, Travium makes the experience smooth for organizers and participants alike.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 py-16">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <!-- Title -->
+    <span class="inline-block bg-white-100 border border-green-500 text-black-600 text-sm font-medium px-4 py-4 rounded-full mb-4">
+      How It Works
+    </span>
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">How It Works ?</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto mb-12">
+      See how Travium guides you through the full event lifecycle.
+    </p>
+
+    <!-- Steps Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Step 1 -->
+      <div class="bg-white rounded-xl shadow-md p-6 text-left hover:shadow-lg transition">
+        <h3 class="text-orange-500 font-semibold mb-2">Step 1</h3>
+        <h4 class="text-xl font-bold text-gray-800 mb-3">Create & Launch Events</h4>
+        <p class="text-gray-600 text-sm mb-4">
+          Easily set up your event with customizable details from schedules to ticketing.
+        </p>
+        <img src="https://supa-prod.pointer.co.id/storage/v1/object/public/upload/image/banner-10.png" alt="Create Event" class="rounded-md border">
+      </div>
+
+      <!-- Step 2 -->
+      <div class="bg-white rounded-xl shadow-md p-6 text-left hover:shadow-lg transition">
+        <h3 class="text-orange-500 font-semibold mb-2">Step 2</h3>
+        <h4 class="text-xl font-bold text-gray-800 mb-3">Manage Attendees</h4>
+        <p class="text-gray-600 text-sm mb-4">
+          Track RSVPs, send reminders, and keep your audience informed.
+        </p>
+        <img src="https://supa-prod.pointer.co.id/storage/v1/object/public/upload/image/banner-11.png" alt="Manage Attendees" class="rounded-md border">
+      </div>
+
+      <!-- Step 3 -->
+      <div class="bg-white rounded-xl shadow-md p-6 text-left hover:shadow-lg transition">
+        <h3 class="text-orange-500 font-semibold mb-2">Step 3</h3>
+        <h4 class="text-xl font-bold text-gray-800 mb-3">Monitor in Real-Time</h4>
+        <p class="text-gray-600 text-sm mb-4">
+          Get live insights during your event and monitor engagement as it happens.
+        </p>
+        <img src="https://supa-prod.pointer.co.id/storage/v1/object/public/upload/image/banner-12.png" alt="Monitor Real Time" class="rounded-md border">
+      </div>
+    </div>
+  </div>
+</section>
+
+   <!-- FAQ Section -->
+ <section class="max-w-5xl mx-auto py-16 px-6">
+    <!-- Badge -->
+    <div class="text-center md:text-left mb-4">
+      <span class="inline-block border border-green-500 text-black-600 bg-white px-6 py-2 rounded-full text-sm font-medium">
+        FAQs
+      </span>
+    </div>
+
+    <!-- Title -->
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 md:text-left text-center">
+      Got Questions? We’ve Got Answers
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+      <!-- Left Info -->
+      <div>
+        <div class="bg-gray-100 p-6 rounded-xl">
+          <h3 class="font-semibold text-lg mb-2">Still have question ?</h3>
+          <p class="text-gray-600 text-sm mb-4">
+            Need more help? Our teams always ready to assist, reach out and we’ll respond quickly to support your next big event.
+          </p>
+          <a href="contact.html" class="flex items-center gap-2 bg-blue-900 text-white px-5 py-2 rounded-lg font-medium hover:bg-blue-700 transition inline-flex ml-[260px]">
+            <!-- SVG icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79V7a2 2 0 00-2-2H5a2 2 0 00-2 2v5.79a2 2 0 00.79 1.58l7 5.25a2 2 0 002.42 0l7-5.25A2 2 0 0021 12.79z" />
+            </svg>
+            Contact Us
+          </a>
+        </div>
+      </div>
+
+      <!-- Right FAQs -->
+      <div class="space-y-4">
+        <!-- Item -->
+        <div class="bg-white p-5 rounded-xl shadow-md">
+          <button class="w-full flex justify-between items-center font-semibold text-gray-800 faq-toggle">
+            <span>What is Travium?</span>
+            <svg class="w-5 h-5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <p class="faq-answer text-sm text-gray-600 mt-2">
+            Travium is an all-in-one platform that helps you create, manage, and monitor events — 
+            from ticketing and RSVPs to attendee engagement and real-time analytics.
+          </p>
+        </div>
+
+        <!-- Item -->
+        <div class="bg-white p-5 rounded-xl shadow-md">
+          <button class="w-full flex justify-between items-center font-semibold text-gray-800 faq-toggle">
+            <span>Who is Travium for?</span>
+            <svg class="w-5 h-5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <p class="faq-answer text-sm text-gray-600 mt-2">
+            Travium is built for event organizers, businesses, and communities who want to streamline event management with modern tools.
+          </p>
+        </div>
+
+        <!-- Item -->
+        <div class="bg-white p-5 rounded-xl shadow-md">
+          <button class="w-full flex justify-between items-center font-semibold text-gray-800 faq-toggle">
+            <span>Can attendees add events to their calendar?</span>
+            <svg class="w-5 h-5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <p class="faq-answer text-sm text-gray-600 mt-2">
+            Yes, attendees can easily add events to Google Calendar, Outlook, or iCal with one click.
+          </p>
+        </div>
+
+        <!-- Item -->
+        <div class="bg-white p-5 rounded-xl shadow-md">
+          <button class="w-full flex justify-between items-center font-semibold text-gray-800 faq-toggle">
+            <span>Does Travium support event check-in?</span>
+            <svg class="w-5 h-5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <p class="faq-answer text-sm text-gray-600 mt-2">
+            Yes, we provide a fast and secure check-in system using QR codes.
+          </p>
+        </div>
+
+        <!-- Item -->
+        <div class="bg-white p-5 rounded-xl shadow-md">
+          <button class="w-full flex justify-between items-center font-semibold text-gray-800 faq-toggle">
+            <span>Can I create paid events with Travium?</span>
+            <svg class="w-5 h-5 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <p class="faq-answer text-sm text-gray-600 mt-2">
+            Absolutely! You can set ticket prices, accept payments, and track sales all in one place.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accordion Script -->
+  <script>
+    document.querySelectorAll('.faq-toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        const icon = button.querySelector('svg');
+        
+        answer.classList.toggle('open');
+        icon.classList.toggle('rotate-180');
+      });
+    });
+  </script>
+
+<!--Mockup Aplication-->>
+<section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-16">
+            <button class="border border-gray-300 px-6 py-2 rounded-full text-lg font-medium text-gray-700 hover:bg-gray-100 transition duration-300 mb-6">
+                Experience the Power
+            </button>
+            
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6">
+                Effortless Event Management
+            </h2>
+            
+            <p class="max-w-3xl mx-auto text-lg text-gray-600">
+                With **Travium**, organizing events becomes faster, easier, and more impactful. From planning and coordination to ticketing and engagement, every feature is designed to save you time, reduce stress, and elevate the entire event experience.
+            </p>
+        </div>
+
+        <div class="relative flex justify-center items-center h-[800px] w-full mt-10">
+
+            <div class="absolute left-0 lg:left-[10%] top-[10%] w-[250px] h-[500px] bg-blue-100/50 rounded-3xl shadow-xl border border-gray-200 transform -rotate-6 hidden md:block">
+                <img src="assets/images/ss-1.png" alt="Event Dashboard Placeholder" class="w-full h-full object-cover rounded-3xl opacity-90">
+            </div>
+
+            <div class="absolute right-0 lg:right-[19%] top-[10%] w-[250px] h-[500px] bg-blue-100/50 rounded-3xl shadow-xl border border-gray-200 transform rotate-6 hidden md:block">
+                <img src="assets/images/ss-2.png" alt="User Profile Placeholder" class="w-full h-full object-cover rounded-3xl opacity-90">
+            </div>
+
+            <div class="absolute right-0 lg-right-[10%] top-[1%] w-[250px] h-[500px] bg-blue-100/50 rounded-3xl shadow-xl border border-gray-200 transform rotate-6 hidden md:block">
+                <img src="assets/images/ss-3.png" alt="User Profile Placeholder" class="w-full h-full object-cover rounded-3xl opacity-90">
+            </div>
+
+            <div class="relative z-10 w-[300px] h-[600px] bg-gray-900 rounded-[50px] shadow-2xl p-2 border-[12px] border-black">
+                <div class="w-full h-full bg-white rounded-[40px] flex justify-center items-center">
+                    <div class="text-center">
+                      
+                        <img src="assets/images/ss-5.png" alt="Travium Login Screen" class="w-full h-auto mt-4 rounded-3xl">
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute left-[15%] bottom-[5%] w-[250px] h-[500px] bg-blue-100/70 rounded-3xl shadow-2xl border border-gray-200 transform -rotate-3 hidden lg:block z-20">
+                <img src="assets/images/ss-4.png" alt="Event Detail Placeholder" class="w-full h-full object-cover rounded-3xl opacity-90">
+            </div>
+        </div>
+    </section>
+
+  <!-- What Our Client Says -->
+<section class="bg-gray-50 py-16 px-6 md:px-12 lg:px-24">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">What Our Client Says</h2>
+    <p class="text-gray-600 mt-2">Beberapa testimoni dari klien yang sudah menggunakan Travium</p>
+  </div>
+
+  <!-- Testimonial Cards -->
+  <div class="grid md:grid-cols-3 gap-8">
+    <!-- Card 1 -->
+    <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-start">
+      <div class="flex items-center mb-4">
+        <img src="assets/images/profile.jpg" alt="Client 1" class="w-12 h-12 rounded-full mr-3">
+        <div>
+          <h3 class="font-semibold text-gray-800">John Doe</h3>
+          <p class="text-sm text-gray-500">CEO, Company A</p>
+        </div>
+      </div>
+      <p class="text-gray-600 mb-4">
+        "Travium membantu kami mengelola data event dengan aman dan efisien. 
+        Prosesnya mudah, dan tim supportnya sangat responsif!"
+      </p>
+      <div class="flex text-yellow-400">
+        ⭐⭐⭐⭐⭐
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-start">
+      <div class="flex items-center mb-4">
+        <img src="assets/images/profile.jpg" alt="Client 2" class="w-12 h-12 rounded-full mr-3">
+        <div>
+          <h3 class="font-semibold text-gray-800">Sarah Lee</h3>
+          <p class="text-sm text-gray-500">Event Manager</p>
+        </div>
+      </div>
+      <p class="text-gray-600 mb-4">
+        "Dengan Travium, manajemen acara menjadi lebih terorganisir. 
+        Sangat merekomendasikan untuk event skala besar maupun kecil."
+      </p>
+      <div class="flex text-yellow-400">
+        ⭐⭐⭐⭐⭐
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-start">
+      <div class="flex items-center mb-4">
+        <img src="assets/images/profile.jpg" alt="Client 3" class="w-12 h-12 rounded-full mr-3">
+        <div>
+          <h3 class="font-semibold text-gray-800">Michael Tan</h3>
+          <p class="text-sm text-gray-500">IT Consultant</p>
+        </div>
+      </div>
+      <p class="text-gray-600 mb-4">
+        "Travium mempermudah kami dalam memenuhi standar compliance data. 
+        Interface yang simpel tapi powerful."
+      </p>
+      <div class="flex text-yellow-400">
+        ⭐⭐⭐⭐⭐
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Call To Action -->
+<!-- Section Ready to Create Event -->
+<section class="flex justify-center my-12 px-4">
+  <div class="bg-blue-500 text-white rounded-2xl shadow-lg p-10 max-w-5xl w-full text-center">
+    <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to Create Your Event?</h2>
+    <p class="text-base md:text-lg mb-6">Mulai sekarang dan buat event Anda jadi lebih mudah dan profesional.</p>
+    <button class="flex items-center gap-2 bg-white text-blue-600 font-medium px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition mx-auto">
+      <!-- Icon Contact (SVG) -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 10.5a8.38 8.38 0 01-.9 3.8l2.1 2.1a1.5 1.5 0 01-2.1 2.1l-2.1-2.1a8.38 8.38 0 01-3.8.9v3a1.5 1.5 0 01-3 0v-3a8.38 8.38 0 01-3.8-.9l-2.1 2.1a1.5 1.5 0 01-2.1-2.1l2.1-2.1a8.38 8.38 0 01-.9-3.8h-3a1.5 1.5 0 010-3h3a8.38 8.38 0 01.9-3.8L3.3 3.3a1.5 1.5 0 012.1-2.1l2.1 2.1a8.38 8.38 0 013.8-.9v-3a1.5 1.5 0 013 0v3a8.38 8.38 0 013.8.9l2.1-2.1a1.5 1.5 0 012.1 2.1l-2.1 2.1a8.38 8.38 0 01.9 3.8h3a1.5 1.5 0 010 3h-3z" />
+      </svg>
+      Tenant App
+    </button>
+    <div class="text-2xl font-bold p-2">Or</div>
+     <button class="flex items-center gap-2 bg-white text-blue-600 font-medium px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition mx-auto">
+      <!-- Icon Contact (SVG) -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 10.5a8.38 8.38 0 01-.9 3.8l2.1 2.1a1.5 1.5 0 01-2.1 2.1l-2.1-2.1a8.38 8.38 0 01-3.8.9v3a1.5 1.5 0 01-3 0v-3a8.38 8.38 0 01-3.8-.9l-2.1 2.1a1.5 1.5 0 01-2.1-2.1l2.1-2.1a8.38 8.38 0 01-.9-3.8h-3a1.5 1.5 0 010-3h3a8.38 8.38 0 01.9-3.8L3.3 3.3a1.5 1.5 0 012.1-2.1l2.1 2.1a8.38 8.38 0 013.8-.9v-3a1.5 1.5 0 013 0v3a8.38 8.38 0 013.8.9l2.1-2.1a1.5 1.5 0 012.1 2.1l-2.1 2.1a8.38 8.38 0 01.9 3.8h3a1.5 1.5 0 010 3h-3z" />
+      </svg>
+      User App
+    </button>
+  </div>
+</section>
+   <section class="max-w-5xl mx-auto px-6 py-16">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <!-- Left -->
+      <div>
+        <span class="inline-block border border-green-500 text-green-600 px-4 py-1 rounded-full text-sm font-medium">
+          Contact Us
+        </span>
+        <h2 class="text-3xl md:text-4xl font-bold mt-4 mb-4">
+          Let's Talk About Your Upcoming Event
+        </h2>
+        <p class="text-gray-600 mb-6">
+          We're here for you! Reach out to our team and we'll get back to you as soon as possible.
+        </p>
+      </div>
+
+      <!-- Right -->
+      <div class="space-y-4">
+        <!-- Email -->
+        <div class="flex items-center gap-3">
+          <div class="bg-blue-100 text-blue-600 p-3 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M16 12H8m8-4H8m10-4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2z" />
+            </svg>
+          </div>
+          <span class="text-gray-800">nonalisa@travium.id</span>
+        </div>
+
+        <!-- Phone -->
+        <div class="flex items-center gap-3">
+          <div class="bg-blue-100 text-blue-600 p-3 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 5a2 2 0 012-2h1.28a1 1 0 01.948.684l1.518 4.553a1 1 0 01-.502 1.21l-2.304 1.152a11.042 11.042 0 005.516 5.516l1.152-2.304a1 1 0 011.21-.502l4.553 1.518a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+          </div>
+          <span class="text-gray-800">021-22767982</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- PDP Compliance Section -->
+<section class="bg-gray-50 py-16">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <!-- Badge -->
+    <span class="inline-block bg-white-100 text-black-600 text-sm font-medium px-4 py-3 border border-green-500 rounded-full mb-6">
+      PDP Compliance
+    </span>
+
+    <!-- Logo + Title -->
+    <div class="flex justify-center items-center gap-4 mb-4">
+        <img src="https://supa-prod.pointer.co.id/storage/v1/object/public/upload/image/PDP.png" alt="PDP Logo" class="h-40" class="round rounded-2xl">
+        
+    </div>
+
+    <!-- Description -->
+    <p class="text-gray-600 max-w-2xl mx-auto">
+      Travium is fully committed to protecting your personal data. Our platform complies 
+      with the Personal Data Protection (PDP) regulations, ensuring that your information 
+      is managed securely, transparently, and responsibly.
+    </p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#0B132B] text-gray-200 py-12">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <!-- Logo & Address -->
+    <div>
+      <img src="https://supa-prod.pointer.co.id/storage/v1/object/public/upload/image/Travium-White.png" alt="Travium Logo" class="h-8 mb-4">
+      <p class="text-sm">
+        Jl. RS. Fatmawati Raya No.29<br>
+        2nd Floor, Cilandak Bar. Kota<br>
+        Jakarta Selatan, DKI Jakarta 12430
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h4 class="text-lg font-semibold mb-3">Quick Links</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="landingPage.html" class="hover:text-white">Home</a></li>
+        <li><a href="features.html" class="hover:text-white">Features</a></li>
+        <li><a href="faqs.html" class="hover:text-white">FAQs</a></li>
+        <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Follow Us -->
+    <div>
+      <h4 class="text-lg font-semibold mb-3">Follow Us</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="https://www.instagram.com/travium.id/" class="hover:text-white">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@travium.id" class="hover:text-white">Tiktok</a></li>
+        <li><a href="https://www.linkedin.com/company/travium-id" class="hover:text-white">LinkedIn</a></li>
+        <li><a href="https://www.facebook.com/travium.id/" class="hover:text-white">Facebook</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h4 class="text-lg font-semibold mb-3">Contact</h4>
+      <ul class="space-y-3 text-sm">
+        <li class="flex items-center gap-2"><span>📍</span> Pointer Creative Center</li>
+        <li class="flex items-center gap-2"><span>✉️</span> nonalisa@travium.id</li>
+        <li class="flex items-center gap-2"><span>📞</span> 021-22767982</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="border-t border-gray-700 mt-8 pt-4 text-center text-sm text-gray-400">
+    © 2025 Travium. All rights reserved.
+  </div>
+</footer>
+
+
+</body>
+</html>
